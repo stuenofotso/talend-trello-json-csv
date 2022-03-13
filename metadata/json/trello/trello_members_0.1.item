@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_iC-48XiSEeyW9bClJ-jMew" name="trello_members" dataPackage="_iC-49HiSEeyW9bClJ-jMew" JSONFilePath="C:/Users/pb11187/Documents/PROBTP/2021/Trello/members.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_iC-48niSEeyW9bClJ-jMew" LimitBoucle="50" AbsoluteXPathQuery="$[*]" flag="ROOT_OBJECT">
+      <schemaTargets xmi:id="_iC-483iSEeyW9bClJ-jMew" RelativeXPathQuery="@" TagName="member_id"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_iC-49HiSEeyW9bClJ-jMew" name="default" dataManager="_iC-48XiSEeyW9bClJ-jMew">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_iC-49XiSEeyW9bClJ-jMew" id="_xNSVYHiREeyW9bClJ-jMew" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iC-49niSEeyW9bClJ-jMew" label="member_id" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

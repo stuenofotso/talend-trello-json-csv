@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_0s9b4Xh-EeyxnIowOrYuvQ" name="trello_table_cards" dataPackage="_0s9b7Hh-EeyxnIowOrYuvQ" JSONFilePath="C:/Users/pb11187/Documents/PROBTP/2021/Trello/export-tableau-backlog-DGD-122021-022022.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_0s9b4nh-EeyxnIowOrYuvQ" LimitBoucle="50" AbsoluteXPathQuery="$.cards[*]">
+      <schemaTargets xmi:id="_0s9b43h-EeyxnIowOrYuvQ" RelativeXPathQuery="id" TagName="idCard"/>
+      <schemaTargets xmi:id="_0s9b5Hh-EeyxnIowOrYuvQ" RelativeXPathQuery="name" TagName="cardName"/>
+      <schemaTargets xmi:id="_0s9b5Xh-EeyxnIowOrYuvQ" RelativeXPathQuery="dateLastActivity" TagName="cardDateLastActivity"/>
+      <schemaTargets xmi:id="_0s9b5nh-EeyxnIowOrYuvQ" RelativeXPathQuery="desc" TagName="descCard"/>
+      <schemaTargets xmi:id="_0s9b53h-EeyxnIowOrYuvQ" RelativeXPathQuery="idBoard" TagName="idBoard"/>
+      <schemaTargets xmi:id="_0s9b6Hh-EeyxnIowOrYuvQ" RelativeXPathQuery="idList" TagName="idList"/>
+      <schemaTargets xmi:id="_0s9b6Xh-EeyxnIowOrYuvQ" RelativeXPathQuery="idMembers[*]" TagName="cardMemberIds"/>
+      <schemaTargets xmi:id="_0s9b6nh-EeyxnIowOrYuvQ" RelativeXPathQuery="labels[*].name" TagName="cardLabelNames"/>
+      <schemaTargets xmi:id="_0s9b63h-EeyxnIowOrYuvQ" RelativeXPathQuery="url" TagName="cardUrl"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_0s9b7Hh-EeyxnIowOrYuvQ" name="default" dataManager="_0s9b4Xh-EeyxnIowOrYuvQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_0s9b7Xh-EeyxnIowOrYuvQ" id="_xM0LYHh9EeyxnIowOrYuvQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0s9b7nh-EeyxnIowOrYuvQ" label="idCard" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0s9b73h-EeyxnIowOrYuvQ" label="cardName" length="243" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0s9b8Hh-EeyxnIowOrYuvQ" label="cardDateLastActivity" length="24" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0s9b8Xh-EeyxnIowOrYuvQ" label="descCard" length="420" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0s9b8nh-EeyxnIowOrYuvQ" label="idBoard" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0s9b83h-EeyxnIowOrYuvQ" label="idList" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0s9b9Hh-EeyxnIowOrYuvQ" label="cardMemberIds" length="163" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0s9b9Xh-EeyxnIowOrYuvQ" label="cardLabelNames" length="42" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0s9b9nh-EeyxnIowOrYuvQ" label="cardUrl" length="185" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
