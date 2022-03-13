@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_KewmMHh9EeyxnIowOrYuvQ" name="trello_table_checklist_items" dataPackage="_KewmNnh9EeyxnIowOrYuvQ" JSONFilePath="C:/Users/pb11187/Documents/PROBTP/2021/Trello/checklistItems.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_sctZ8HifEeyW9bClJ-jMew" LimitBoucle="50" AbsoluteXPathQuery="$[*]" flag="ROOT_OBJECT">
+      <schemaTargets xmi:id="_uW0WMHifEeyW9bClJ-jMew" RelativeXPathQuery="idChecklist" TagName="idChecklist"/>
+      <schemaTargets xmi:id="_xTm3cHifEeyW9bClJ-jMew" RelativeXPathQuery="state" TagName="itemState"/>
+      <schemaTargets xmi:id="_x8nYMHifEeyW9bClJ-jMew" RelativeXPathQuery="id" TagName="itemId"/>
+      <schemaTargets xmi:id="_1C_6UHifEeyW9bClJ-jMew" RelativeXPathQuery="name" TagName="itemName"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_KewmNnh9EeyxnIowOrYuvQ" name="default" dataManager="_KewmMHh9EeyxnIowOrYuvQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_KewmN3h9EeyxnIowOrYuvQ" id="_Nao6wHh4EeyxnIowOrYuvQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_4T-i4HifEeyW9bClJ-jMew" label="idChecklist" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_4T-i4XifEeyW9bClJ-jMew" label="itemState" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_4T-i4nifEeyW9bClJ-jMew" label="itemId" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_4T-i43ifEeyW9bClJ-jMew" label="itemName" length="45" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

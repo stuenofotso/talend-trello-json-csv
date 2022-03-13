@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_GeWZ4Xh_EeyxnIowOrYuvQ" name="trello_table_lists" dataPackage="_GeWZ53h_EeyxnIowOrYuvQ" JSONFilePath="C:/Users/pb11187/Documents/PROBTP/2021/Trello/export-tableau-backlog-DGD-122021-022022.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_GeWZ4nh_EeyxnIowOrYuvQ" LimitBoucle="50" AbsoluteXPathQuery="$.lists[*]">
+      <schemaTargets xmi:id="_GeWZ43h_EeyxnIowOrYuvQ" RelativeXPathQuery="id" TagName="idList"/>
+      <schemaTargets xmi:id="_GeWZ5Hh_EeyxnIowOrYuvQ" RelativeXPathQuery="name" TagName="nameList"/>
+      <schemaTargets xmi:id="_GeWZ5Xh_EeyxnIowOrYuvQ" RelativeXPathQuery="pos" TagName="posList"/>
+      <schemaTargets xmi:id="_GeWZ5nh_EeyxnIowOrYuvQ" RelativeXPathQuery="idBoard" TagName="idBoard"/>
+      <schemaTargets xmi:id="_gdNIkHh_EeyxnIowOrYuvQ" RelativeXPathQuery="$.name" TagName="nameBoard"/>
+      <schemaTargets xmi:id="_g3dboHh_EeyxnIowOrYuvQ" RelativeXPathQuery="$.desc" TagName="descBoard"/>
+      <schemaTargets xmi:id="_ikHKsHh_EeyxnIowOrYuvQ" RelativeXPathQuery="$.dateLastActivity" TagName="dateLastActivityBoard"/>
+      <schemaTargets xmi:id="_j9VAYHh_EeyxnIowOrYuvQ" RelativeXPathQuery="$.url" TagName="urlBoard"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_GeWZ53h_EeyxnIowOrYuvQ" name="default" dataManager="_GeWZ4Xh_EeyxnIowOrYuvQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_GeWZ6Hh_EeyxnIowOrYuvQ" id="_49rDIHh-EeyxnIowOrYuvQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GeWZ6Xh_EeyxnIowOrYuvQ" label="idList" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GeWZ6nh_EeyxnIowOrYuvQ" label="nameList" length="42" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GeWZ63h_EeyxnIowOrYuvQ" label="posList" length="11" precision="5" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GeWZ7Hh_EeyxnIowOrYuvQ" label="idBoard" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qq6SsHh_EeyxnIowOrYuvQ" label="nameBoard" length="23" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qq6SsXh_EeyxnIowOrYuvQ" label="descBoard" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qq6Ssnh_EeyxnIowOrYuvQ" label="dateLastActivityBoard" length="24" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qq6Ss3h_EeyxnIowOrYuvQ" label="urlBoard" length="53" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

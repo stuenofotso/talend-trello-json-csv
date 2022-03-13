@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_vjonEXh9EeyxnIowOrYuvQ" name="trello_table_checklists" dataPackage="_vjonF3h9EeyxnIowOrYuvQ" JSONFilePath="C:/Users/pb11187/Documents/PROBTP/2021/Trello/export-tableau-backlog-DGD-122021-022022.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_vjonEnh9EeyxnIowOrYuvQ" LimitBoucle="50" AbsoluteXPathQuery="$.checklists[*]">
+      <schemaTargets xmi:id="_vjonE3h9EeyxnIowOrYuvQ" RelativeXPathQuery="id" TagName="idChecklist"/>
+      <schemaTargets xmi:id="_vjonFHh9EeyxnIowOrYuvQ" RelativeXPathQuery="name" TagName="nameChecklist"/>
+      <schemaTargets xmi:id="_vjonFXh9EeyxnIowOrYuvQ" RelativeXPathQuery="idCard" TagName="idCard"/>
+      <schemaTargets xmi:id="_vjonFnh9EeyxnIowOrYuvQ" RelativeXPathQuery="idBoard" TagName="idBoard"/>
+      <schemaTargets xmi:id="_G22L4HifEeyW9bClJ-jMew" RelativeXPathQuery="checkItems[*]" TagName="checkItems"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_vjonF3h9EeyxnIowOrYuvQ" name="default" dataManager="_vjonEXh9EeyxnIowOrYuvQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_vjonGHh9EeyxnIowOrYuvQ" id="_RUyp4Hh9EeyxnIowOrYuvQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vjonGXh9EeyxnIowOrYuvQ" label="idChecklist" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vjonGnh9EeyxnIowOrYuvQ" label="nameChecklist" length="23" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vjonG3h9EeyxnIowOrYuvQ" label="idCard" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vjonHHh9EeyxnIowOrYuvQ" label="idBoard" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JXwpcHifEeyW9bClJ-jMew" label="checkItems" length="2078" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
